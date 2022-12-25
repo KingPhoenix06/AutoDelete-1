@@ -11,7 +11,7 @@ GROUPS = []
 for grp in environ.get("GROUPS",'-1001805750891').split():
     GROUPS.append(int(grp))
 ADMINS = []
-for usr in environ.get("ADMINS").split():
+for usr in environ.get("ADMINS",'1115053159').split():
     ADMINS.append(int(usr))
 
 START_MSG = "<b>Hai {},\nI'm a simple bot to delete group messages after a specific time</b>"
